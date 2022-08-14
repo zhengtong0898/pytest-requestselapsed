@@ -1,5 +1,8 @@
 # pytest-requestselapsed
-当前插件对 [requests](https://requests.readthedocs.io/en/latest/) 库进行简单的封装使它成为一个 [fixture](https://docs.pytest.org/en/6.2.x/fixture.html) 对象.
+[pytest-requestselapsed](https://pypi.org/project/pytest-requestselapsed/) 插件对 [requests](https://requests.readthedocs.io/en/latest/) 库进行简单的封装, 使它成为一个 [fixture](https://docs.pytest.org/en/6.2.x/fixture.html) 对象.  
+除此之外还额外的增加了一个记录所有请求的响应时间特性, 在所有测试用例执行结束后可统一发送出来.   
+目前发送目标支持: console、飞书.  
+
 
 &nbsp;  
 **安装插件**  
