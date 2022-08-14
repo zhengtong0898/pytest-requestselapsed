@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-requestselapsed"
+version = "0.0.3"
+authors = [ { name="zt", email="330356463@qq.com" } ]
+description = "collect and show http requests elapsed time"
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.entry-points."pytest11"]
+requestselapsed = "requestselapsed.plugin"
+
+[project.urls]
+"Homepage" = "https://github.com/zhengtong0898/pytest-requestselapsed"
+
+[tool.setuptools]
+packages = ["requestselapsed"]
